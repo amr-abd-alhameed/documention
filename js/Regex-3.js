@@ -1,0 +1,10 @@
+const text = "AamRkdjdSdkjkdSDj@#4F##$343J$;";
+const smallChars = /[a-z]/g;
+const capitalizedChars = /[A-Z]/g;
+const specials = /[^a-zA-Z1-9]/g;
+const allExcieptChars = /[^a-z]/gi;
+console.log(text.match(smallChars));
+console.log(text.match(capitalizedChars));
+console.log(text.match(specials));
+console.log(text.match(allExcieptChars));
+// console.log(text.match());
