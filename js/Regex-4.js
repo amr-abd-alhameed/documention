@@ -3,6 +3,12 @@ const email =
 const dot = /./g; // matches any char except new lines or other line terminator
 // console.log(email.match(dot));
 //const word = /\w/g; //matches all chars and numbers and underScore
-const spaces = / /g;
+// /w matches all words like chars lower and upper case and numbers and underScore
+// /W matches all non words like special chars
+// /d matches all digits for range 0-9
+// /D matches all non digits 
+// /s matches all spaces
+// /S matches all non spaces
+const spaces = /\S/g;
 const validEmail = /\w@\w.net/g;
-console.log(email.match(validEmail));
+console.log(email.match(spaces));
